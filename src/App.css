@@ -1,0 +1,30 @@
+/* Start Responsive Containers */
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+}
+
+/* Small Screens */
+@media (min-width: 767px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium Screens */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Large Screens */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* End Responsive Containers */

@@ -1,0 +1,124 @@
+.actions {
+  text-align: right;
+  width: 100%;
+}
+
+.actions div {
+  display: inline-block;
+}
+
+.actions img {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.actions .currencyChanger {
+  margin-left: 10px;
+  position: relative;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.actions .currencyOverlay {
+  position: absolute;
+  top: -2000px;
+  left: -2000px;
+  width: 2000vw;
+  height: 2000vh;
+  background-color: transparent;
+  z-index: -1;
+  display: none;
+}
+
+.actions .currencyChanger .currencyOptions {
+  position: absolute;
+  top: 50px;
+  left: -25px;
+  background-color: white;
+  box-shadow: 1px 1px 10px rgb(198, 198, 198);
+  display: none;
+  width: fit-content;
+  z-index: 50;
+  transition: 0.3s;
+}
+
+.actions .currencyChanger .currencyOptions ul {
+  list-style: none;
+  text-align: left;
+  overflow: hidden;
+}
+
+.actions .currencyChanger .currencyOptions ul li {
+  padding: 8px 35px 8px 10px;
+  transition: 0.3s;
+  cursor: pointer;
+  width: 100%;
+}
+
+.actions .currencyChanger .currencyOptions ul li:hover {
+  background-color: #eeeeee;
+}
+
+.actions .options {
+  margin-left: 8px;
+}
+
+.actions .cartIcon {
+  margin-left: 15px;
+  position: relative;
+}
+
+.fullCart::before {
+  content: attr(data-quantity);
+  position: absolute;
+  background-color: black;
+  color: white;
+  width: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-weight: 700;
+  font-size: 13px;
+  border-radius: 50%;
+  top: -12px;
+  right: -12px;
+}
+
+.actions .cartArea {
+  position: relative;
+}
+
+.actions .overlay1 {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: -2000px;
+  width: 2000vw;
+  height: 2000vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -2;
+}
+
+.actions .overlay2 {
+  display: none;
+  position: absolute;
+  top: -2000px;
+  left: -2000px;
+  width: 2000vw;
+  height: 2000vh;
+  background-color: transparent;
+  z-index: 4;
+}
+
+.actions .overlayCart {
+  display: none;
+  padding: 0 20px 5px 20px;
+  position: absolute;
+  top: 40px;
+  left: -250px;
+  max-height: 70vh;
+  width: 300px;
+  overflow: auto;
+  background-color: white;
+  z-index: 5;
+  text-align: left;
+}

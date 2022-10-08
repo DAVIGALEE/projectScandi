@@ -1,0 +1,18 @@
+.navHolder {
+  position: relative;
+  margin-top: 70px;
+}
+
+.nav {
+  position: fixed;
+  width: 85%;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 200;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}

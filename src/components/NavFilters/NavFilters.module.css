@@ -1,0 +1,38 @@
+.filters {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.filter {
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.active {
+  color: #1dcf65;
+  position: relative;
+  transition: 0.3s;
+}
+
+.active::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: -10px;
+  height: 2px;
+  background-color: #1dcf65;
+  transition: 0.3s;
+  animation: fill 0.2s forwards;
+}
+
+@keyframes fill {
+  from {
+    width: 0;
+  }
+  to {
+    width: calc(100% + 20px);
+  }
+}

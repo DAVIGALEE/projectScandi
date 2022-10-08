@@ -1,0 +1,31 @@
+.swatchAttributeContainer {
+  font-size: 10px;
+}
+
+.swatchAttributeContainer .attributeHolder div {
+  width: 10px;
+  height: 10px;
+  margin: 2px 4px 2px 0;
+}
+
+.swatchAttributeContainer .selected {
+  outline: 2px solid #5ece7b;
+}
+
+.attributeHolder {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: black;
+}
+
+.attributeHolder div {
+  margin: 5px 10px 5px 0;
+  border: 1px solid black;
+  width: 30px;
+  height: 30px;
+}
+
+.selected {
+  outline: 3px solid #5ece7b;
+}

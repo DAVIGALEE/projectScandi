@@ -1,0 +1,10 @@
+.addToCart {
+  position: absolute;
+  bottom: -26px;
+  right: 25px;
+  color: white;
+  background-color: #5ece7b;
+  border-radius: 100%;
+  padding: 12px;
+  cursor: pointer;
+}

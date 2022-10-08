@@ -1,0 +1,111 @@
+.cartItem {
+  display: flex !important;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.overlayed {
+  font-size: 12px;
+}
+
+.itemData {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+}
+
+.itemEdit {
+  display: flex !important;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 10px 0 0;
+  width: 60%;
+}
+
+.brand {
+  font-weight: 400;
+}
+
+.quantity {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15px;
+  height: 15px;
+  border: 1px solid black;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.icon:hover {
+  outline: 1px solid black;
+}
+
+.overlayedIcon {
+  width: 10px;
+  height: 10px;
+  padding: 8px;
+}
+
+.gallery {
+  position: relative;
+}
+
+.mainImgHolder {
+  width: 200px;
+}
+
+.overlayedImg {
+  width: 90px;
+}
+
+.mainImg {
+  width: 100%;
+}
+
+.galleryNav {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.right {
+  margin-left: 10px;
+}
+
+.right,
+.left {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.right:hover,
+.left:hover {
+  background-color: rgba(0, 0, 0, 0.75);
+}
